@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .tsx --ext .ts src/",
-    "format": "prettier --check ./src"
+    "format": "prettier --check ./src",
+    "prepare": "husky install ./.husky"
   },
   "eslintConfig": {
     "extends": [
