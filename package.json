@@ -28,8 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .tsx --ext .ts src/",
-    "format": "prettier --check ./src",
-    "prepare": "husky install ./.husky"
+    "format": "prettier --check ./src"
   },
   "eslintConfig": {
     "extends": [
@@ -62,15 +61,17 @@
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --ext .tsx --ext .ts ./src --fix"
+    ],
+    "./src/**": [
+      "prettier --write ."
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "eslint 'src/**' --fix",
-      "npm run test:staged"
-    ]
   }
 }
