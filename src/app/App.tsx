@@ -1,15 +1,16 @@
-import TodoForm from "../features/todoForm/TodoForm";;
-import TodoList from "../features/todoList/TodoList";
-import Filter from "../features/visibilityFilter/Filter";
+import TodoForm from '../features/todoForm/TodoForm';;
+import TodoList from '../features/todoList/TodoList';
+import Filter from '../features/visibilityFilter/Filter';
 
-import "./App.css";
+
+import './App.css';
 
 export default function App() {
   return (
     <div>
-      <TodoForm />
-      <TodoList />
-      <Filter />
+    <TodoForm/>
+      <TodoList/>
+      <Filter/>
     </div>
   );
 }
