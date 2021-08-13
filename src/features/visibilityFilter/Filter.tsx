@@ -1,7 +1,7 @@
-import React from 'react'
-import FilterButton from './FilterButton';
+import React from "react";
+import FilterButton from "./FilterButton";
 
-import { VisibilityFilter } from './visibilitySlice';
+import { VisibilityFilter } from "./visibilitySlice";
 
 export default function Filter(): JSX.Element {
   return (

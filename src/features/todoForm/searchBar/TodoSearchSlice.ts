@@ -1,19 +1,19 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export const SearchBar = ""
+export const SearchBar = "";
 
 const initialState = SearchBar;
 
 const searchBarSlice = createSlice({
-  name: 'searchBar',
+  name: "searchBar",
   initialState,
   reducers: {
     setSearchBar(state, action: PayloadAction<string>) {
       return action.payload;
-    }
-  }
+    },
+  },
 });
 
 export const { setSearchBar } = searchBarSlice.actions;
 
-export default searchBarSlice.reducer; 
+export default searchBarSlice.reducer;

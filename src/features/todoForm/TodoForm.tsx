@@ -11,7 +11,7 @@ export default function TodoForm(): JSX.Element {
     setText(e.target.value);
   }
 
-  function handleSubmit(e: any) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     if (!text.trim()) {
@@ -25,7 +25,7 @@ export default function TodoForm(): JSX.Element {
   return (
     <React.Fragment>
       <SearchBarInput />
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <input value={text} onChange={handleChange} />
         <button type="submit">Add Todo</button>
       </form>

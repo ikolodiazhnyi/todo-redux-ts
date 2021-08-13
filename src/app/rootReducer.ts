@@ -1,5 +1,5 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import searchBar from '../features/todoForm/searchBar/TodoSearchSlice'
+import searchBar from "../features/todoForm/searchBar/TodoSearchSlice";
 import todos from "../features/todoList/todoSlice";
 import visibilityFilter from "../features/visibilityFilter/visibilitySlice";
 

@@ -1,15 +1,20 @@
-import './TodoList.css'
+import "./TodoList.css";
 
 interface TodoProps {
   completed: boolean;
   text: string;
-  toggleTodo: () => any;
+  toggleTodo: () => void;
   removeTodo: () => void;
 }
 
-export default function TodoListItem({ completed, text, toggleTodo, removeTodo }: TodoProps) {
+export default function TodoListItem({
+  completed,
+  text,
+  toggleTodo,
+  removeTodo,
+}: TodoProps): JSX.Element {
   return (
-    <li >
+    <li>
       <label className={completed ? "completed" : undefined}>
         <input type="checkbox" onChange={toggleTodo} checked={completed} />
         {text}
