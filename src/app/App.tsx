@@ -9,7 +9,7 @@ export default function App(): JSX.Element {
          <div>
           <TodoForm />   
         <TodoList />
-      <Filter />  
+      <Filter />   
     </div> 
   );
 }
