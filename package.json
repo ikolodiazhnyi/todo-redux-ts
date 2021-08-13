@@ -62,14 +62,15 @@
     "prettier": "^2.3.2"
   },
   "lint-staged": {
-    "./src/": [
+    "src/": [
       "eslint --ext .tsx --ext .ts src/ --fix",
       "prettier --write ."
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "“echo \"[Husky] pre-commit\"” lint-staged"
+      
     }
   }
 }
