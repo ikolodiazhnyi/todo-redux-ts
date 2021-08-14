@@ -1,0 +1,7 @@
+.searchBar {
+    box-sizing: border-box;
+    width: 300px;
+    height: 1.6rem;
+    margin-bottom: .5rem;
+    font-size: larger;
+  }

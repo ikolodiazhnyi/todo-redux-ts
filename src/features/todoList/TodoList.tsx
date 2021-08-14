@@ -41,7 +41,7 @@ export default function TodoList(): JSX.Element {
   );
 
   return (
-    <ul>
+    <ul className="todoList">
       {todos.map((todo) => (
         <TodoListItem
           key={todo.id}

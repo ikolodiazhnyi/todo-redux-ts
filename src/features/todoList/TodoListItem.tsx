@@ -14,12 +14,19 @@ export default function TodoListItem({
   removeTodo,
 }: TodoProps): JSX.Element {
   return (
-    <li>
+    <li className="todoItem">
       <label className={completed ? "completed" : undefined}>
-        <input type="checkbox" onChange={toggleTodo} checked={completed} />
+        <input
+          className="todoInput"
+          type="checkbox"
+          onChange={toggleTodo}
+          checked={completed}
+        />
         {text}
       </label>
-      <button onClick={removeTodo}>x</button>
+      <button className="rb" onClick={removeTodo}>
+        x
+      </button>
     </li>
   );
 }

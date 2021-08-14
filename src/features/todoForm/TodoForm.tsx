@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../todoList/todoSlice";
 import SearchBarInput from "./searchBar/SearchBarInput";
+import "./AddTodo.css"
 
 export default function TodoForm(): JSX.Element {
   const dispatch = useDispatch();
@@ -26,8 +27,13 @@ export default function TodoForm(): JSX.Element {
     <React.Fragment>
       <SearchBarInput />
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input value={text} onChange={handleChange} />
-        <button type="submit">Add Todo</button>
+        <input
+          className="inputTodo"
+          value={text}
+          onChange={handleChange}
+          placeholder="Wat're u gonna do?.."
+        />
+        <button className="addTodo" type="submit">Add</button>
       </form>
     </React.Fragment>
   );

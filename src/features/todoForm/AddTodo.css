@@ -1,0 +1,15 @@
+.addTodo {
+  display: inline-block;
+  width: 50px;
+  height: 1.6rem;
+}
+
+.inputTodo {
+  box-sizing: border-box;
+  width: 242px;
+  height: 1.6rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: larger;
+  vertical-align: top;
+}

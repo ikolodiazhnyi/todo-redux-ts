@@ -5,10 +5,11 @@ import "./App.css";
 
 export default function App(): JSX.Element {
   return (
-    <div>
+    <div className="wrapper">
+      <h1>To Do List</h1>
       <TodoForm />
       <TodoList />
       <Filter />
-             </div>    
+    </div>
   );
 }

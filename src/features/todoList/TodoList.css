@@ -1,3 +1,37 @@
 .completed {
   opacity: 0.5;
 }
+
+li input.todoInput {
+  margin-right: 1rem;
+}
+
+li.todoItem {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+}
+
+.todoItem label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rb {
+  color: crimson;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+}
+
+ul.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+

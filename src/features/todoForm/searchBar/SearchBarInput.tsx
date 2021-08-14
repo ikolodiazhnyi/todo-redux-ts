@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { setSearchBar } from "./TodoSearchSlice";
+import "./SearchBar.css"
 
 export default function SearchBarInput(): JSX.Element {
   const dispatch = useDispatch();
@@ -8,5 +9,12 @@ export default function SearchBarInput(): JSX.Element {
     dispatch(setSearchBar(e.target.value));
   }
 
-  return <input type="text" placeholder="Search here..." onChange={handleChange}></input>;
+  return (
+    <input
+      className="searchBar"
+      type="text"
+      placeholder="Search here..."
+      onChange={handleChange}
+    ></input>
+  );
 }
