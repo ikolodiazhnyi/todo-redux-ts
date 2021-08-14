@@ -30,14 +30,14 @@ export const { toggleTodo, removeTodo } = todoSlice.actions;
 
 export const addTodo =
   (text: string): AppThunk =>
-  (dispatch: AppDispatch) => {
-    const newTodo: Todo = {
-      id: uuidv4(),
-      completed: false,
-      text: text,
-    };
+    (dispatch: AppDispatch) => {
+      const newTodo: Todo = {
+        id: uuidv4(),
+        completed: false,
+        text: text,
+      };
 
-    dispatch(todoSlice.actions.addTodo(newTodo));
-  };
+      dispatch(todoSlice.actions.addTodo(newTodo));
+    };
 
 export default todoSlice.reducer;
