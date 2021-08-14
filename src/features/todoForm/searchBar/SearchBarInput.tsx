@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";;
+import { useDispatch } from "react-redux";
 import { setSearchBar } from "./TodoSearchSlice";
 
 export default function SearchBarInput(): JSX.Element {
